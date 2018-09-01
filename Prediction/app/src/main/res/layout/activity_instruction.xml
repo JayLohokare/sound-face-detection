@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ecemoca.bing.prediction.ui.InstructionActivity">
+
+    <ScrollView
+        android:id="@+id/instructionScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textInstruction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/instruction" />
+        </LinearLayout>
+    </ScrollView>
+</android.widget.LinearLayout>

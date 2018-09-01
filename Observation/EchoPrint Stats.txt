@@ -1,0 +1,32 @@
+Galaxy S7 edge
+
+Memory:
+Highest - 50Mb
+Average - 22Mb
+
+CPU Thread time (Nanoseconds):
+Average - 6418.98925
+Peak - 31587.737
+
+Execution Time (milliseconds):
+Average - 44.875 
+Peak - 91
+
+
+
+Galaxy S8
+
+Memory:
+Peak - 45Mb
+Average - 20Mb
+
+CPU Thread time (Nanoseconds):
+Average - 5142.500
+Peak - 29037.448
+
+Execution Time (milliseconds):
+Average - 15.33333333
+Peak - 35
+
+
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ecemoca.bing.prediction.MainActivity">
+
+    <com.ecemoca.bing.prediction.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/plot">
+
+        <com.ecemoca.bing.prediction.camera.GraphicOverlay
+            android:id="@+id/faceOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.ecemoca.bing.prediction.camera.CameraSourcePreview>
+
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/plot"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_above="@+id/micSwitch"
+        android:layout_alignParentStart="true"
+        app:lineLabelInsetBottom="10dp"
+        app:lineLabelInsetLeft="15dp"
+        app:lineLabelRotationBottom="-45"
+        app:lineLabels="left|bottom"
+        app:theme="@style/FullScreenGraph"
+        app:title="Sound" />
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/plot"
+        android:text="DENIED!"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/startButton"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Predict"
+        android:textSize="14sp" />
+
+    <Switch
+        android:id="@+id/userData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/saveTraining"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="user" />
+
+    <Switch
+        android:id="@+id/saveTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clearButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="44dp"
+        android:text="predict" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toEndOf="@+id/userData"
+        android:text="others"
+        android:textColor="@color/ap_white" />
+
+    <Button
+        android:id="@+id/trainButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/startButton"
+        android:text="Train" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/trainButton"
+        android:text="Delete" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/saveTraining"
+        android:layout_alignBottom="@+id/saveTraining"
+        android:layout_toEndOf="@+id/saveTraining"
+        android:text="train    "
+        android:textColor="@color/ap_white" />
+
+    <Switch
+        android:id="@+id/micSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/saveTraining"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="P9" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/micSwitch"
+        android:layout_alignBottom="@+id/micSwitch"
+        android:layout_toEndOf="@+id/micSwitch"
+        android:text="S8    "
+        android:textColor="@color/ap_white" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/clearButton"
+        android:layout_below="@+id/saveTraining"
+        android:layout_alignParentBottom="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userData"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+</android.widget.RelativeLayout>

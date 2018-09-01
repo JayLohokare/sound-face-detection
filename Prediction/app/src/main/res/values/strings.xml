@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Prediction</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_mic">Microphone switch</string>
+    <string name="pref_description_mic">Select which microphone to use. Default top mic for P9, check this for S8.</string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">Bing</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="instruction">
+        <b>User Instructions:</b>
+	    \n\n<b>1. Register new user</b>
+        \nTurn the switch button to \"train\" and input the user name, then click OK.
+        \n\n<b>2. Training data collection</b>
+        \nClick ON/OFF button to start data collection, make sure the face area (red rectangle) is
+        between the two green rectangles. Turn the switch to \"user\" which indicates the user is in
+        presence, otherwise turn the switch to \"others\", and collect \"attack\" users\' data.
+        Click ON/OFF button to stop and save data.
+        \n\n<b>3. Model training</b>
+        \nOnce data collection is done, click TRAIN button to train a model based on the data collected
+        just now for a single user. Long press TRAIN button will train a model for this user leveraging
+        all the registered data (others\' data as attacks).
+        \n\n<b>4. Real-time authentication</b>
+        \nOnce training is done, turn the switch to \"predict\", and click ON/OFF button to start
+        real-time authentication.
+        \n\n<b>5. Different phones</b>
+        \nTurn the switch to P9 or S8 to select microphones, we use top microphone.
+        \n\n<b>6. Delete user</b>
+        \nSelect the user in drop down box, and click DELETE button, then confirm.
+        \n\n<b>7. Data directories</b>
+        \nThe root directory is /EchoPrint/
+        \nUser data is located in subfolder /userData/
+        \nTrained model and auto-generated files are in /generatedData/
+        \n\nContact: bing.zhou@stonybrook.edu
+        \nElectrical and Computer Engineering, Stony Brook University
+    </string>
+
+</resources>
